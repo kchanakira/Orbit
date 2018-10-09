@@ -339,8 +339,7 @@ public class OrbitWatchFace extends CanvasWatchFaceService {
 
         private void drawWatchFace(Canvas canvas) {
             final int seconds = mCalendar.get(Calendar.SECOND);
-            //final int minutes = mCalendar.get(Calendar.MINUTE);
-            int minutes = 25;
+            final int minutes = mCalendar.get(Calendar.MINUTE);
             final int hour = mUse24HourClock
                     ? mCalendar.get(Calendar.HOUR_OF_DAY)
                     : mCalendar.get(Calendar.HOUR) != 0
